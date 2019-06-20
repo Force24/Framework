@@ -1,0 +1,32 @@
+
+body { 
+	
+}
+
+.visible-desktop {
+	display: none;
+	visibility: hidden;
+	@include breakpoint(md) {
+		display: block;
+		visibility: visible
+	}
+}
+ 
+.visible-mobile {
+	display: block;
+	visibility: visible;
+	@include breakpoint(md){
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.zero-padding {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+
+	@include breakpoint(md){
+		padding-left: 10px !important;
+		padding-left: 10px !important;
+	}
+}

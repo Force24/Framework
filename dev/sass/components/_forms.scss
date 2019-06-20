@@ -1,0 +1,66 @@
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+
+form {
+    margin: 0;
+}
+
+.field-group {
+    padding: 20px;
+    background: $grey-light;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: relative;
+    height: auto;
+    // overflow: auto
+}
+
+label { 
+    display: none;
+}
+
+::-webkit-input-placeholder {
+}
+
+::-moz-placeholder {
+}
+
+:-ms-input-placeholder {
+}
+
+.validation {
+   display: none;
+}
+
+.has-error .validation {
+   clear: both;
+   display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    float: left;
+    height: auto;
+    padding: 15px;
+    height: 50px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: none;
+    margin-right: 2%;
+}
+
+.form-item {
+    position: relative;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+ 
+

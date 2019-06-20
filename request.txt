@@ -1,0 +1,30 @@
+*   Trying 84.18.197.167...
+* TCP_NODELAY set
+* Connected to alpha-api.data-crypt.com (84.18.197.167) port 443 (#0)
+* ALPN, offering http/1.1
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server accepted to use http/1.1
+* Server certificate:
+*  subject: CN=*.data-crypt.com
+*  start date: Apr 23 00:00:00 2018 GMT
+*  expire date: Nov 14 12:00:00 2018 GMT
+*  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=RapidSSL RSA CA 2018
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+> POST /token HTTP/1.1
+Host: alpha-api.data-crypt.com
+User-Agent: force24-php/1.0.0
+Accept: */*
+Content-Length: 69
+Content-Type: application/x-www-form-urlencoded
+
+* upload completely sent off: 69 out of 69 bytes
+< HTTP/1.1 400 Bad Request
+< Cache-Control: no-cache
+< Pragma: no-cache
+< Content-Type: application/json;charset=UTF-8
+< Expires: -1
+< Server: Microsoft-IIS/10.0
+< Date: Mon, 19 Nov 2018 12:13:42 GMT
+< Content-Length: 87
+< 
+* Connection #0 to host alpha-api.data-crypt.com left intact

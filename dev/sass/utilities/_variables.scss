@@ -1,0 +1,83 @@
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+
+// Responsiveness
+// -------------------------
+// 'true' is default
+//  setting this creates extra responsive classes targetting defined breakpoints
+//  eg the 'visually-hidden' mixin
+$responsive:        true!default;
+
+
+// Typography
+// -------------------------
+
+$brand-font: 'Arial', sans-serif;
+
+// Let's set the base font size to 62.5% (10px) for easier calculations
+$base-font-size:   62.5%;
+$base-line-height: 1.4 !default;
+
+$body-font-desktop: 1.6; // = 14px
+$body-font-mobile:  1.6; // = 14px
+
+// Breakpoints
+// -------------------------
+
+// Named breakpoints
+$breakpoint-xs: 320px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1170px;
+
+// Suggestion - provide a minimum/maximum so media queries don't overlap when required
+// use as max/min values for mixins for responsive utilities etc
+
+$xs-min: 400px;
+$xs-max: ($breakpoint-sm - 1);
+
+$sm-min: $breakpoint-sm;
+$sm-max: ($breakpoint-md - 1);
+
+$md-min: $breakpoint-md;
+$md-max: ($breakpoint-lg - 1);
+
+$lg-min: $breakpoint-lg;
+
+
+// Colors
+// -------------------------
+
+// Base colors
+$white: #ffffff;
+$black: #000;
+
+// Greys
+$grey-dark: #414141;
+$grey-mid: #bebebe;
+$grey-light: #eaeaea;
+
+
+// Brand colours
+
+
+// Link colors
+$color-link-default:   #000000;
+$color-link-visited:   #000000;
+$color-link-hover:     #000000;
+$color-link-focus:     #000000;
+$color-link-disabled:  #000000;
+
+
+// z-index levels - use these rather than defining individual numbers, keeps it consistent and less likely to have problems
+$z-index-100: 100;
+$z-index-200: 200;
+$z-index-300: 300;
+$z-index-400: 400;
+$z-index-500: 500;
+$z-index-600: 600;
+$z-index-700: 700;
+$z-index-800: 800;
+$z-index-900: 900;
+$z-index-1000: 1000;
